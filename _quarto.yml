@@ -2,11 +2,11 @@ project:
   type: website
   output-dir: docs
   resources: 
-    - ./_Geiser_Resume_2024.pdf 
+    - ./Geiser_Resume.pdf 
 
 website:
   title: "Joshua Geiser"
-  site-url: "https://www.jkgeiser.github.io"
+  site-url: "https://jgeiser47.github.io/Portfolio"
   navbar:
     left:
       - href: index.qmd
@@ -21,7 +21,7 @@ website:
         text: Software
     tools:
       - icon: linkedin
-        href: https://www.linkedin.com/in/joshua-geiser-a7496b106/
+        href: https://www.linkedin.com/in/joshua-geiser
       - icon: github
         href: https://github.com/jgeiser47
 

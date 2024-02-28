@@ -6,13 +6,13 @@ about:
   links:
     - icon: linkedin
       text: LinkedIn
-      href: https://www.linkedin.com/in/joshua-geiser-a7496b106/
+      href: https://www.linkedin.com/in/joshua-geiser
     - icon: github
       text: GitHub
       href: https://github.com/jgeiser47
     - icon: paperclip
       text: Resume
-      href: https://www.jgeiser47.github.io/Geiser_Resume.pdf
+      href: /Geiser_Resume.pdf
 ---
 
 ## Background
@@ -33,4 +33,4 @@ NASA Johnson Space Center | Aerospace Engineer - Full Time | Jul 2022 - present
 
 ![](Geiser_Resume.pdf)
 
-<a href="jgeiser47.github.io/_Geiser_Resume_2024.pdf" target="_blank">Link</a>
+<a href="https://jgeiser47.github.io/Portfolio/Geiser_Resume.pdf" target="_blank">Link</a>
