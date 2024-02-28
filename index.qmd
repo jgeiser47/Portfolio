@@ -12,7 +12,7 @@ about:
       href: https://github.com/jgeiser47
     - icon: paperclip
       text: Resume
-      href: /Geiser_Resume.pdf
+      href: /Portfolio/Geiser_Resume.pdf
 ---
 
 ## Background
@@ -31,6 +31,4 @@ NASA Johnson Space Center | Aerospace Engineer - Full Time | Jul 2022 - present
 
 ## Resume
 
-![](Geiser_Resume.pdf)
-
-<a href="https://jgeiser47.github.io/Portfolio/Geiser_Resume.pdf" target="_blank">Link</a>
+<a href="https://jgeiser47.github.io/Portfolio/Geiser_Resume.pdf" target="_blank">Here</a> is my current resume!
