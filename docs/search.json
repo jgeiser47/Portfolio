@@ -1,0 +1,301 @@
+[
+  {
+    "objectID": "portfolio/work_experience/full_time.html",
+    "href": "portfolio/work_experience/full_time.html",
+    "title": "NASA JSC",
+    "section": "",
+    "text": "After finishing up graduate school, I hired on full-time in the Flight Mechanics and Trajectory Design Branch at NASA’s Johnson Space Center (JSC) in Houston, Texas, where I had previously completed five internship/co-op rotations.",
+    "crumbs": [
+      "Work Experience",
+      "NASA JSC"
+    ]
+  },
+  {
+    "objectID": "portfolio/work_experience/full_time.html#artemis-i-operations",
+    "href": "portfolio/work_experience/full_time.html#artemis-i-operations",
+    "title": "NASA JSC",
+    "section": "Artemis I Operations",
+    "text": "Artemis I Operations\n\n\n\n\nMyself on console during Artemis I\n\n\n\nI’ll be the first to admit I was lucky enough to be in the right place at the right time for this one. Artemis I, the first test flight of the SLS rocket and Orion spacecraft around the Moon, was set to launch shortly after I began full-time. Since I had previous experience with Artemis I off-nominal trajectory development, I was able to fast-track my certification as a Trajectory Analysis, Retargeting, and Optimization Officer (TARGO) in the Mission Evaluation Room (MER) in Mission Control Center (MCC).\nI supported multiple shifts throughout the course of the 26 day mission (despite a brief hiatus after getting COVID while working console). Each shift, I’d communicate over the loops with other flight controllers, assess off-nominal trajectory capabilities for that phase of the mission, and update the current reference trajectory from navigation states received from the spacecraft. Not to mention, I got to be one of the first to see some of the incredible images downlinked from Orion during its two lunar flybys and coast in a Distant Retrograde Orbit (DRO) beyond the Moon. Overall, the mission was a wild success!",
+    "crumbs": [
+      "Work Experience",
+      "NASA JSC"
+    ]
+  },
+  {
+    "objectID": "portfolio/work_experience/full_time.html#artemis-ii-mission-design",
+    "href": "portfolio/work_experience/full_time.html#artemis-ii-mission-design",
+    "title": "NASA JSC",
+    "section": "Artemis II Mission Design",
+    "text": "Artemis II Mission Design\n\n\n\n\nThe nominal Artemis II trajectory\n\n\n\nArtemis II is the first crewed mission to the Moon since the Apollo missions in the 1970’s. The nominal trajectory spends about a day in High Earth Orbit (HEO) before injecting into a lunar free return trajectory, giving a total mission duration of about nine days. Off-nominal trajectory analysis is also a key area of concern for the mission design team, as continuous abort coverage throughout the entire mission is required to get the crew safely home under off-nominal events.\nMy task was to develop abort trajectories across a range of conditions, including different launch days, launch times, phases of the mission, times of abort burns, number of abort burns, engines used for burns, returns durations, and more. The sheer quantity of different permutations of abort trajectories (10,000+) meant that automation and parallel processing were critical. Individual trajectories would be numerically optimized with Copernicus, a generalized trajectory optimization software. Each of these individual trajectories would be represented as a single node in a giant Directed Acyclic Graph (DAG) representing the entire scan. By developing the Python tools to automate the parallel processing of this scan DAG, I was able to quantify our abort capability throughout the mission, a crucial step in developing flight rules for how the vehicle would be flown real-time.",
+    "crumbs": [
+      "Work Experience",
+      "NASA JSC"
+    ]
+  },
+  {
+    "objectID": "portfolio/work_experience/full_time.html#artemis-iii-mission-design",
+    "href": "portfolio/work_experience/full_time.html#artemis-iii-mission-design",
+    "title": "NASA JSC",
+    "section": "Artemis III+ Mission Design",
+    "text": "Artemis III+ Mission Design\n\n\n\n\nThe nominal Artemis III trajectory\n\n\n\nArtemis III will be the first crewed mission to land humans on the Moon in over 50 years. The nominal trajectory is targeting a Near-Rectilinear Halo Orbit (NRHO), where Orion will coast before rendezvousing with the Human Landing System (HLS) vehicle to take the crew down to the lunar surface. Future Artemis missions (Artemis IV, Artemis V, etc.) will also follow similar mission profiles, targeting the NRHO as the baseline orbit.\nAbort trajectory analysis is equally as imperative as it was for Artemis II. The difficult problem is this: how does one adapt the framework used for Artemis II aborts development to work for a completely different mission with a wildly different trajectory? This was one of our lessons learned from Artemis I - generalization of our tools is crucial for avoiding software rewrites each mission. Ultimately, I was able to generalize the aborts automation framework to be mission-agnostic, such that I could simultaneously churn out thousands of trajectories for Artemis II, Artemis III, and future missions. This allowed me to properly answer questions from key stakeholders on what amount of abort capability we would have during various phases of the mission.",
+    "crumbs": [
+      "Work Experience",
+      "NASA JSC"
+    ]
+  },
+  {
+    "objectID": "portfolio/work_experience/full_time.html#copernicuslincov-copcov-integration",
+    "href": "portfolio/work_experience/full_time.html#copernicuslincov-copcov-integration",
+    "title": "NASA JSC",
+    "section": "Copernicus/LinCov (CopCov) Integration",
+    "text": "Copernicus/LinCov (CopCov) Integration\nThis was a project/capability that my division had been interested in for a number of years. Copernicus is our trajectory design and optimization tool that our mission design teams to develop in-space reference trajectories. LinCov is a linear covariance analysis tool that our Guidance, Navigation, & Control (GN&C) teams use to get statistical information for how well a given spacecraft’s GN&C system can actually follow the reference. These two tools historically had been developed completely separately from eachother and operated independently by different teams. Robust trajectory optimization, whereby a trajectory is optimized with uncertainty (from an imperfect GN&C system) accounted for in the system, is possible if the two tools could interface more directly.\nI was able to develop an interface that allowed Copernicus to optimize trajectories while receiving trajectory dispersion data from LinCov in a direct feedback loop. Additionally, I was able to develop additional avenues for injecting dispersion data into the optimization algorithm. For example, a LinCov “Emulator” was developed that could use multivariate polynomial regression to fit large datasets of offline LinCov runs; this allowed Copernicus to optimize trajectories in a fraction of the runtime. I published a conference paper on my recent progress towards this integration effort at the AAS/AIAA Astrodynamics Specialist Conference in 2023.",
+    "crumbs": [
+      "Work Experience",
+      "NASA JSC"
+    ]
+  },
+  {
+    "objectID": "portfolio/work_experience/full_time.html#auto-burn-plan-management",
+    "href": "portfolio/work_experience/full_time.html#auto-burn-plan-management",
+    "title": "NASA JSC",
+    "section": "Auto-Burn-Plan Management",
+    "text": "Auto-Burn-Plan Management\nThis was a fun and exciting project for me to work on because it allowed me to dip my toes into a bit more of a project management role. Auto-Burn-Plan (ABP) was a tool that had been developed to act as a bridge between data products generated by our Mission Design teams and our GN&C teams. While ABP was hugely helpful in supporting the Artemis I mission as well as various tasks with our commercial partners, it was in need of a refactor for future Artemis missions. Though I inherited this code base pretty early on in my full-time tenure, I was eager to learn its use cases as well as its deficiencies. I steered direction of this development effort to get us to a new, usable ABP 2.0 version that is now actively being used to support our future Artemis missions as well as NASA’s Human Landing System (HLS) commerical partners. I also got to interface with a variety of new teams and get a bigger picture understanding of how our various data products integrate into a larger flight readiness process.",
+    "crumbs": [
+      "Work Experience",
+      "NASA JSC"
+    ]
+  },
+  {
+    "objectID": "portfolio/work_experience/full_time.html#ice-giants-aerocapture",
+    "href": "portfolio/work_experience/full_time.html#ice-giants-aerocapture",
+    "title": "NASA JSC",
+    "section": "Ice Giants Aerocapture",
+    "text": "Ice Giants Aerocapture\nAerocapture is an intriguing idea - rather than performing a large maneuver to insert into a captured orbit around a planetary body, what if we instead dipped down into the atmosphere and used atmospheric drag to capture into orbit? While this maneuver has been researched for decades, it has yet to actually be demonstrated in flight. However, recent advances in GN&C systems and thermal protection systems make aerocapture more feasible now than it’s ever been in the past. This project was to study the feasibility of using aerocapture to enable a flagship class mission to one of the Ice Giant planets - Uranus.\nThis was a cross NASA center, cross company, and cross disclipine collaboration effort. On the JSC team, we are responsible for development, analysis, and integration of the guidance algorithm to be used during the aerocapture atmospheric pass. This included simulation development (using Julia programming language), Monte Carlo analyses, various tuning studies, and integration of the algorithm into the “runs-for-record” C simulations. As a part of this research effort, I also had the opportunity to co-author a conference paper for the 2024 SciTech conference.",
+    "crumbs": [
+      "Work Experience",
+      "NASA JSC"
+    ]
+  },
+  {
+    "objectID": "portfolio/work_experience/full_time.html#contractor-support",
+    "href": "portfolio/work_experience/full_time.html#contractor-support",
+    "title": "NASA JSC",
+    "section": "Contractor Support",
+    "text": "Contractor Support\nI’ve also worked on a couple of projects in collaboration with NASA’s industry partners. I have worked closely with teams at Blue Origin on cislunar trajectory design and robust trajectory optimization applications in support of a Space Act Agreement (SAA) to advance the technology readiness of their lunar landing system. More recently, I have also provided similiar support as a part of their Human Landing System (HLS) contract to develop a human-rated lunar lander. Lastly, I am a Contracting Officer’s Representative (COR) supporting NASA’s partnership with Draper Laboratory.\n\n\n\nMyself on console during Artemis I\nThe nominal Artemis II trajectory\nThe nominal Artemis III trajectory",
+    "crumbs": [
+      "Work Experience",
+      "NASA JSC"
+    ]
+  },
+  {
+    "objectID": "portfolio/software/software.html",
+    "href": "portfolio/software/software.html",
+    "title": "Software Projects",
+    "section": "",
+    "text": "The following is a listing of notable software projects I have displayed on my GitHub account."
+  },
+  {
+    "objectID": "portfolio/software/software.html#advent-of-code-2023",
+    "href": "portfolio/software/software.html#advent-of-code-2023",
+    "title": "Software Projects",
+    "section": "Advent of Code 2023",
+    "text": "Advent of Code 2023\nThis one was just for fun! My branch at NASA JSC likes to take place in a friendly competition for Advent of Code (AoC) - an annual coding challenge consisting of 25 days of problems with increasing difficulty. AoC is intended to be a fun learning experience for all, and indeed I myself learned a lot about data structures, algorithmic efficiency, and more. I even took home first place on our local leaderboard! (This came with the bragging rights of proving Python to be superior to the other languages in the mix - Fortran, C++, Julia, and Excel/VBA)"
+  },
+  {
+    "objectID": "portfolio/software/software.html#neural-network-predicting-covid-19-impact-on-electric-grid",
+    "href": "portfolio/software/software.html#neural-network-predicting-covid-19-impact-on-electric-grid",
+    "title": "Software Projects",
+    "section": "Neural Network Predicting COVID-19 Impact on Electric Grid",
+    "text": "Neural Network Predicting COVID-19 Impact on Electric Grid\nThis was a final project for my graduate Machine Learning course while at Stanford. Using the Keras package, we trained a Long Short-Term Memory (LSTM) Recurrent Neural Network (RNN) to predict the demand on the local electric grid in a number of major American cities. By training our model on pre-COVID load data, we predicted that we would be able to observe the effect of COVID-19 as the difference in predicted vs true load magnitude. Indeed, we observed a clear delta in predicted vs true electric grid demands that coincided with the onset of COVID-19 shutdowns."
+  },
+  {
+    "objectID": "portfolio/software/software.html#a-reinforcement-learning-algorithm-for-blackjack",
+    "href": "portfolio/software/software.html#a-reinforcement-learning-algorithm-for-blackjack",
+    "title": "Software Projects",
+    "section": "A Reinforcement Learning Algorithm for BlackJack",
+    "text": "A Reinforcement Learning Algorithm for BlackJack\nThis was another final project at Stanford, this time for a course entitled Decision Making Under Uncertainty. For this project, we applied a variety of different reinforcement learning algorithms to learn optimal policies for playing the popular casino card game - BlackJack. We demonstrated that the resulting policies were far superior to random policies, and were nearly identical to “truth” values (i.e., reference BlackJack strategy charts for optimal gameplay)."
+  },
+  {
+    "objectID": "portfolio/software/software.html#fuel-optimal-orbital-transfers-to-mars",
+    "href": "portfolio/software/software.html#fuel-optimal-orbital-transfers-to-mars",
+    "title": "Software Projects",
+    "section": "Fuel-Optimal Orbital Transfers to Mars",
+    "text": "Fuel-Optimal Orbital Transfers to Mars\nThis was an open-ended final project for my graduate school course Engineering Design Optimization. For this project, I chose to apply a variety of different optimization algorithms to the problem of finding fuel-optimal orbital transfers to Mars. By making use of Lambert’s Algorithm, I was able to model the dynamics of the problem across a range of launch/landing dates. I was also able to validate my results by showing that they aligned closely with the actual launch/landing dates of the recent Mars 2020 mission. My favorite optimization algorithm I used was the cross-entropy algorithm - a stochastic population-based algorithm - due to its simple and elegant use of probability functions!"
+  },
+  {
+    "objectID": "portfolio/publications/publications.html",
+    "href": "portfolio/publications/publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "This is a listing of all the technical conference publications to which I have contributed."
+  },
+  {
+    "objectID": "portfolio/publications/publications.html#first-author",
+    "href": "portfolio/publications/publications.html#first-author",
+    "title": "Publications",
+    "section": "First Author",
+    "text": "First Author\n\nCopernicus/LinCov (CopCov) Software Integration in Support of Robust Trajectory Optimization\nCopernicus is a generalized spacecraft trajectory design and optimization software, commonly used to design reference trajectory profiles. LinCov is a completely separate tool, used to produce linear covariance analyses that determine how well an integrated GN&C system is able to fly the reference profile. While these two tools have historically been run independently, together they can achieve the notion of robust trajectory optimization, whereby a trajectory is optimized while accounting for system uncertanties. This paper highlights the implementation of the CopCov interface, which allows Copernicus and LinCov to jointly optimize trajectories through a direct feedback loop. This work was published and presented at the 2023 AAS/AIAA Astrodynamics Specialist Conference in Big Sky, Montana.\n\n\nOptimal Angle of Attack Control for Aerocapture\nAerocapture is a maneuver in which a spacecraft redirects its trajectory by flying through a planet’s atmosphere to attain a desired orbit after atmospheric exit, typically at a fraction of the propellant cost of a fully propulsive maneuver. Direct Force Control (DFC) is a control methodology that varies the spacecraft’s angle of attack in order to target desired periapsis and apopasis altitudes of the post-atmospheric orbit. However, contrary to other control methodologies, there is no known optimal angle of attack profile for aerocapture trajectories using DFC. This paper uses principles of optimal control theory to numerically solve for the optimal angle of attack profile for an aerocpature mission at Mars. This work was published at the 2022 AIAA SciTech Forum in San Diego, California."
+  },
+  {
+    "objectID": "portfolio/publications/publications.html#co-author",
+    "href": "portfolio/publications/publications.html#co-author",
+    "title": "Publications",
+    "section": "Co-Author",
+    "text": "Co-Author\n\nAnalysis of a Bank Control Guidance for Aerocapture at Uranus\nAerocapture has the potential to be an enabling technology for future flagship-class science missions to Uranus. The team at NASA JSC has been responsible for developing, tuning, and delivering the guidance algorithm for a representative aerocapture mission at Uranus. The Fully Numeric Predictor-corrector Aerocapture Guidance (FNPAG) algorithm, rooted in principles of optimal control theory, was chosen for this application. This paper details the implementation of the FNPAG algorithm in Julia programming language, various studies performed to tune its performance to Uranus-specific conditions, and delivery/integration of the algorithm into a C simulation framework. This work was published at the 2024 AIAA SciTech Forum in Orlando, Florida.\n\n\nPsyche Early Project Verification & Validation Planning Development\nThe Psyche mission is a mission to explore a metal-rich asteroid in orbit between Mars and Jupiter. As a NASA Discovery mission, Psyche has the advantage of a number of predecessors to take lessons learned from, including in the area of Verification and Validation (V&V) planning and development. This paper highlights some of the strategies used by the Psyche team to take advantage of V&V planning early in the project lifecycle, including the use of DOORS Next Generation (DNG) software and some of the tools developed to augment its capabilities. This work was published at the 2019 IEEE Aerospace Conference in Big Sky, Montana."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Joshua Geiser",
+    "section": "",
+    "text": "Hi! My name is Josh, thanks for visiting my personal portfolio website! I am an Aerospace Engineer in the Flight Mechanics and Trajectory Design Branch at NASA’s Johnson Space Center. When not optimizing trajectories for future missions to the Moon, I enjoy getting outdoors, climbing mountains, and training Brazilian Jiu-Jitsu."
+  },
+  {
+    "objectID": "index.html#background",
+    "href": "index.html#background",
+    "title": "Joshua Geiser",
+    "section": "",
+    "text": "Hi! My name is Josh, thanks for visiting my personal portfolio website! I am an Aerospace Engineer in the Flight Mechanics and Trajectory Design Branch at NASA’s Johnson Space Center. When not optimizing trajectories for future missions to the Moon, I enjoy getting outdoors, climbing mountains, and training Brazilian Jiu-Jitsu."
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Joshua Geiser",
+    "section": "Education",
+    "text": "Education\nStanford University | M.S. in Aeronautics & Astronautics | Sep 2020 - Mar 2022\nPurdue University | B.S. in Aeronautical & Astronautical Engineering | Aug 2015 - Dec 2019"
+  },
+  {
+    "objectID": "index.html#experience",
+    "href": "index.html#experience",
+    "title": "Joshua Geiser",
+    "section": "Experience",
+    "text": "Experience\nNASA Johnson Space Center | Aerospace Engineer - Full Time | Jul 2022 - present"
+  },
+  {
+    "objectID": "index.html#resume",
+    "href": "index.html#resume",
+    "title": "Joshua Geiser",
+    "section": "Resume",
+    "text": "Resume\n\nLink"
+  },
+  {
+    "objectID": "portfolio/education/education.html",
+    "href": "portfolio/education/education.html",
+    "title": "Education",
+    "section": "",
+    "text": "The following is a summary of my formal education background."
+  },
+  {
+    "objectID": "portfolio/education/education.html#stanford-university",
+    "href": "portfolio/education/education.html#stanford-university",
+    "title": "Education",
+    "section": "Stanford University",
+    "text": "Stanford University\n\n\n\n\nThey accidentally gave me a PhD cap!\n\n\n\nDates: Sep 2020 - Mar 2022\nDegree: Master’s of Science\nField: Aeronautics & Astronautics\nGPA: 4.00 / 4.00\nI felt incredibly lucky to have the opportunity to attend Stanford University for my graduate degree. Within the realm of aerospace, I continued to further explore my specializations in astrodynamics and Guidance, Navigation, and Control (GN&C). I performed graduate research under Professor Simone D’Amico, working on simulation development and analysis for a high-precision spacecraft formation flying mission known as VISORS. Though my degree was in the aero/astro department, I was also curious about many topics in computer science and autonomy, and took courses such as Machine Learning, Decision Making Under Uncertainty, Principles of Robot Autonomy, and Programming Abstractions.\nOutside of my own courses, I also was a teaching assistant at a variety of different levels. I spent one quarter TA’ing for a sales course within the Stanford Graduate School of Business (GSB). I would then TA for a graduate level classical controls course in the engineering department, one that I had excelled in when I took it myself a year prior. My last quarter at Stanford I TA’ed for an undergraduate level dynamics course within the engineering department. I found TA’ing to be an incredibly rewarding experience, realizing how much I enjoyed teaching and helping others learn complex technical material. Similar to undergrad, I also made time for fun - taking swim classes regularly, joining the jiu-jitsu club, participating in intramurals, and going on long trail runs around the peninsula."
+  },
+  {
+    "objectID": "portfolio/education/education.html#purdue-university",
+    "href": "portfolio/education/education.html#purdue-university",
+    "title": "Education",
+    "section": "Purdue University",
+    "text": "Purdue University\n\n\n\n\nCommencement Day at Purdue\n\n\n\nDates: Aug 2015 - Dec 2019\nDegree: Bachelor’s of Science\nField: Aeronautical & Astronautical Engineering\nGPA: 4.00 / 4.00\nFor my undergraduate education, I attended Purdue University in West Lafayette, Indiana, about an hour away from my hometown. While here, I began to learn of my passion for aerospace and human spaceflight, and learned of Purdue’s rich history in these fields. Towards the end of my degree, I began to specialize in the fields of dynamics and controls, with an emphasis on astrodynamics, and I realized that I wanted to attend graduate school to deepen my knowledge in these fields. I also got involved in undergraduate research with Professor Dengfeng Sun, developing a small Python simulation framework for simulating the dynamics and controls of aircraft in flight.\nI tried to be as involved as possible in an array of different extracurriculars while on campus. I was an active member of the Purdue Engineering Student Council (PESC) and held the position of Treasurer on PESC’s Executive Committee. Additionally, I traveled to the United Nations in Austria as a part of a short-term study abroad program, was the Academics Chair and Scholarship Chair for my fraternity, and partook in Purdue’s Co-Op program with NASA. I also made time for fun, joining the boxing and jiu-jitsu clubs, participating in various intramural sports, and running the annual Purdue half-marathon.\n\n\n\nThey accidentally gave me a PhD cap!\nCommencement Day at Purdue"
+  },
+  {
+    "objectID": "portfolio/work_experience/internships.html",
+    "href": "portfolio/work_experience/internships.html",
+    "title": "Internships",
+    "section": "",
+    "text": "Between my time in undergrad and graduate school, I completed eight internships/co-op rotations in a variety of different work environments:",
+    "crumbs": [
+      "Work Experience",
+      "Internships"
+    ]
+  },
+  {
+    "objectID": "portfolio/work_experience/internships.html#summer-2021---nasa-johnson-space-center",
+    "href": "portfolio/work_experience/internships.html#summer-2021---nasa-johnson-space-center",
+    "title": "Internships",
+    "section": "Summer 2021 - NASA Johnson Space Center",
+    "text": "Summer 2021 - NASA Johnson Space Center\nThis was my only internship during graduate school and my last one before beginning full time work! Although I was in the same branch as my most recent tours, I worked on the atmospheric flight side of the branch this time around. My task was a research project to attempt to find the optimal angle of attack profile using Direct Force Control (DFC) in an aerocapture maneuver. This was a great opportunity for me to learn about a ton of different fields that I had little to no exposure to previously: atmospheric flight dynamics, aerocapture, guidance algorithms, and optimal control theory. Ultimately, I was able to use both direct and indirect methods of optimal control theory to numerically simulate the optimal angle of attack profile. I published my research from the summer in a conference paper entitled Optimal Angle of Attack Profile for Aerocapture.",
+    "crumbs": [
+      "Work Experience",
+      "Internships"
+    ]
+  },
+  {
+    "objectID": "portfolio/work_experience/internships.html#summer-2020---blue-origin",
+    "href": "portfolio/work_experience/internships.html#summer-2020---blue-origin",
+    "title": "Internships",
+    "section": "Summer 2020 - Blue Origin",
+    "text": "Summer 2020 - Blue Origin\n\n\n\n\nThis lander looks pretty neat!\n\n\n\nI was interested in getting some exposure to the private spaceflight industry, so I took a summer off from my regular NASA Co-Op tours to intern at Blue Origin. Although this internship was at the height of the COVID pandemic and thus mostly remote, I was still able to make the most of it. Throughout my time there, I developed a MATLAB/Simulink testing infrastructure to support Processor-in-the-Loop (PIL) testing, giving me some exposure to embedded software development. I then integrated this PIL functionality into the team’s end-to-end testing framework to support vehicle guidance and control applications.",
+    "crumbs": [
+      "Work Experience",
+      "Internships"
+    ]
+  },
+  {
+    "objectID": "portfolio/work_experience/internships.html#spring-2020---nasa-johnson-space-center",
+    "href": "portfolio/work_experience/internships.html#spring-2020---nasa-johnson-space-center",
+    "title": "Internships",
+    "section": "Spring 2020 - NASA Johnson Space Center",
+    "text": "Spring 2020 - NASA Johnson Space Center\nThis tour was a continuation of my previous internship in the flight mechanics and trajectory design branch. This time around, the emphasis was on developing large scans of my previously-designed partial-TLI alternate missions, so that the solution space could be further analyzed. This tour really allowed me to improve my Python and software development skills by integrating my scan automation logic into our overarching scan architecture. By automating the process of numerically optimizing trajectories across a range of different conditions (launch days, launch times, percent-TLI complete, return times, etc.), I was able to produce 1000’s of optimal trajectories. From this dataset, I then gathered abort performance trends and presented these results to various stakeholders.",
+    "crumbs": [
+      "Work Experience",
+      "Internships"
+    ]
+  },
+  {
+    "objectID": "portfolio/work_experience/internships.html#summer-2019---nasa-johnson-space-center",
+    "href": "portfolio/work_experience/internships.html#summer-2019---nasa-johnson-space-center",
+    "title": "Internships",
+    "section": "Summer 2019 - NASA Johnson Space Center",
+    "text": "Summer 2019 - NASA Johnson Space Center\nThis was my first internship in the flight mechanics and trajectory design branch where I would eventually hire into full-time. For this tour, I worked on trajectory design for Artemis I alternate missions. Essentially, the idea was that if we were to have some anomolous event during the Trans-Lunar Injection (TLI) maneuever to get us out to the Moon, we might still be able to accomplish some major mission objectives even without completing the nominal mission. I designed and developed a trajectory profile for this partial-TLI subspace where Orion would be able to reorient itself onto a lunar free return trajectory and safely come back home.",
+    "crumbs": [
+      "Work Experience",
+      "Internships"
+    ]
+  },
+  {
+    "objectID": "portfolio/work_experience/internships.html#spring-2019---nasa-johnson-space-center",
+    "href": "portfolio/work_experience/internships.html#spring-2019---nasa-johnson-space-center",
+    "title": "Internships",
+    "section": "Spring 2019 - NASA Johnson Space Center",
+    "text": "Spring 2019 - NASA Johnson Space Center\n\n\n\n\nThe Neutral Buoyancy Lab at JSC\n\n\n\nThis was my first Co-Op tour as a part of NASA’s Pathways Program, and my first exposure to the Flight Operations Directorate (FOD) at NASA JSC. FOD’s motto is “plan, train, fly” and the organization is famous for a variety of reasons: it is the home of the Mission Control Center (MCC), NASA’s astronaut corps, and the many flight controllers who have operated everything from the early Apollo missions to present-day International Space Station (ISS) operations.\nThis tour really allowed me to develop the “soft” skills that are so important to flight controllers - communication, prioritization, decision-making, and more. I was fortunate enough to also get the chance to do plenty of On-the-Job-Training (OJTing), learning from flight controllers’ training during simulations and even real-time ISS operations. On the technical side, I also developed a ground display for use during flight of the Boeing CST Starliner vehicle.",
+    "crumbs": [
+      "Work Experience",
+      "Internships"
+    ]
+  },
+  {
+    "objectID": "portfolio/work_experience/internships.html#summer-2018---nasa-jet-propulsion-laboratory",
+    "href": "portfolio/work_experience/internships.html#summer-2018---nasa-jet-propulsion-laboratory",
+    "title": "Internships",
+    "section": "Summer 2018 - NASA Jet Propulsion Laboratory",
+    "text": "Summer 2018 - NASA Jet Propulsion Laboratory\n\n\n\n\nThe Mars 2020 sky crane!\n\n\n\nI had always been interested in working at JPL, and was fortunate enough to receive an offer to join the Psyche team for a summer internship. Though I was joining a systems engineering team, they had actually been looking for a software engineering intern. Luckily, through my internship at Raytheon I had previous exposure to the software they were using - DOORS Next Generation (DNG) - as well as experience with HTML/CSS/JavaScript and a personal love for software development.\nMy task was to develop a series of web “widgets” that would be integrated into the browser-based DNG software to support requirements development and verification/validation (V&V) planning. Though I am by no means an expert in web development, this task allowed me to be a self-starter and independently learn the software skills I needed to develop these applications. I also co-authored a paper on Early V&V planning for the Psyche mission as a part of my effort this summer.",
+    "crumbs": [
+      "Work Experience",
+      "Internships"
+    ]
+  },
+  {
+    "objectID": "portfolio/work_experience/internships.html#spring-2018---nasa-johnson-space-center",
+    "href": "portfolio/work_experience/internships.html#spring-2018---nasa-johnson-space-center",
+    "title": "Internships",
+    "section": "Spring 2018 - NASA Johnson Space Center",
+    "text": "Spring 2018 - NASA Johnson Space Center\nThis was my first internship working at NASA’s Johnson Space Center. Positioned in the Integrated GN&C Branch, I was tasked with supporting Independent Verification and Validation (IV&V) analyses for SpaceX’s Crew Dragon vehicle as a part of the Commercial Crew Program (CCP). I quickly delved into our C/C++ simulation framework in order to model the dynamics of the ascent abort cases I was analyzing. In addition to getting some great exposure to software development tools (i.e., Unix environments, Git, etc.) in a larger-scale project environment, I also learned practical applications of the control algorithms and dynamics models that I was learning in the classroom.",
+    "crumbs": [
+      "Work Experience",
+      "Internships"
+    ]
+  },
+  {
+    "objectID": "portfolio/work_experience/internships.html#summer-2017---raytheon-company",
+    "href": "portfolio/work_experience/internships.html#summer-2017---raytheon-company",
+    "title": "Internships",
+    "section": "Summer 2017 - Raytheon Company",
+    "text": "Summer 2017 - Raytheon Company\n\n\n\n\nJust a young engineer next to a tank\n\n\n\nFor my first internship as an eager college sophomore, I would work in systems engineering at Raytheon Company (now part of Raytheon Technologies) in Indianapolis. I was a part of a team working on a modernized situational awareness avionics system for the HH-60G helicopter used by the U.S. Air National Guard. I performed a wide array of tasks in support of this effort, including requirements documentation using IBM’s DOORS software, a functional hazard analysis for the helmet mounted display system, and testing of the display system. Additionally, I also picked up an extra software development task, and learned HTML/CSS/JavaScript from scratch to enhance the functionality of a Six Sigma project that tracks integration and testing of manufactured assemblies.\n\n\n\nThis lander looks pretty neat!\nThe Neutral Buoyancy Lab at JSC\nThe Mars 2020 sky crane!\nJust a young engineer next to a tank",
+    "crumbs": [
+      "Work Experience",
+      "Internships"
+    ]
+  }
+]
