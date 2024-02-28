@@ -1,0 +1,24 @@
+---
+title: "Software Projects"
+lightbox: True
+---
+
+_The following is a listing of notable software projects I have displayed on my GitHub account._
+
+## Advent of Code 2023
+
+This one was just for fun! My branch at NASA JSC likes to take place in a friendly competition for [Advent of Code](https://adventofcode.com/) (AoC) - an annual coding challenge consisting of 25 days of problems with increasing difficulty. AoC is intended to be a fun learning experience for all, and indeed I myself learned a lot about data structures, algorithmic efficiency, and more. I even took home first place on our local leaderboard! (This came with the bragging rights of proving Python to be superior to the other languages in the mix - Fortran, C++, Julia, and Excel/VBA)
+
+## Neural Network Predicting COVID-19 Impact on Electric Grid
+
+This was a final project for my graduate _Machine Learning_ course while at Stanford. Using the Keras package, we trained a Long Short-Term Memory (LSTM) Recurrent Neural Network (RNN) to predict the demand on the local electric grid in a number of major American cities. By training our model on pre-COVID load data, we predicted that we would be able to observe the effect of COVID-19 as the difference in predicted vs true load magnitude. Indeed, we observed a clear delta in predicted vs true electric grid demands that coincided with the onset of COVID-19 shutdowns.
+
+## A Reinforcement Learning Algorithm for BlackJack
+
+This was another final project at Stanford, this time for a course entitled _Decision Making Under Uncertainty_. For this project, we applied a variety of different reinforcement learning algorithms to learn optimal policies for playing the popular casino card game - BlackJack. We demonstrated that the resulting policies were far superior to random policies, and were nearly identical to "truth" values (i.e., reference BlackJack strategy charts for optimal gameplay). 
+
+## Fuel-Optimal Orbital Transfers to Mars
+
+This was an open-ended final project for my graduate school course _Engineering Design Optimization_. For this project, I chose to apply a variety of different optimization algorithms to the problem of finding fuel-optimal orbital transfers to Mars. By making use of [Lambert's Algorithm](https://en.wikipedia.org/wiki/Lambert%27s_problem), I was able to model the dynamics of the problem across a range of launch/landing dates. I was also able to validate my results by showing that they aligned closely with the actual launch/landing dates of the recent Mars 2020 mission. My favorite optimization algorithm I used was the cross-entropy algorithm - a stochastic population-based algorithm - due to its simple and elegant use of probability functions!
+
+

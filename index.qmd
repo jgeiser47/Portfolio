@@ -1,0 +1,36 @@
+---
+title: "Joshua Geiser"
+about:
+  template: trestles
+  image: Geiser_headshot.jpg
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/joshua-geiser-a7496b106/
+    - icon: github
+      text: GitHub
+      href: https://github.com/jgeiser47
+    - icon: paperclip
+      text: Resume
+      href: https://www.jgeiser47.github.io/Geiser_Resume.pdf
+---
+
+## Background
+
+Hi! My name is Josh, thanks for visiting my personal portfolio website! I am an Aerospace Engineer in the Flight Mechanics and Trajectory Design Branch at NASA's Johnson Space Center. When not optimizing trajectories for future missions to the Moon, I enjoy getting outdoors, climbing mountains, and training Brazilian Jiu-Jitsu.
+
+## Education
+
+Stanford University | M.S. in Aeronautics & Astronautics | Sep 2020 - Mar 2022
+
+Purdue University | B.S. in Aeronautical & Astronautical Engineering | Aug 2015 - Dec 2019
+
+## Experience
+
+NASA Johnson Space Center | Aerospace Engineer - Full Time | Jul 2022 - present
+
+## Resume
+
+![](Geiser_Resume.pdf)
+
+<a href="jgeiser47.github.io/_Geiser_Resume_2024.pdf" target="_blank">Link</a>

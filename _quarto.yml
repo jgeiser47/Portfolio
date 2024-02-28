@@ -1,0 +1,45 @@
+project:
+  type: website
+  output-dir: docs
+  resources: 
+    - ./_Geiser_Resume_2024.pdf 
+
+website:
+  title: "Joshua Geiser"
+  site-url: "https://www.jkgeiser.github.io"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: portfolio/work_experience/full_time.qmd
+        text: Work Experience
+      - href: portfolio/education/education.qmd
+        text: Education
+      - href: portfolio/publications/publications.qmd
+        text: Publications
+      - href: portfolio/software/software.qmd
+        text: Software
+    tools:
+      - icon: linkedin
+        href: https://www.linkedin.com/in/joshua-geiser-a7496b106/
+      - icon: github
+        href: https://github.com/jgeiser47
+
+  sidebar:
+    - id: about
+      style: "docked"
+      background: light
+      contents:
+      - portfolio/work_experience/full_time.qmd
+      - portfolio/work_experience/internships.qmd
+
+format:
+  html:
+    theme: 
+      light: lightly
+      dark: darkly
+    css: styles.css
+    toc: true
+
+
+

@@ -1,0 +1,38 @@
+/* css styles */
+
+.wrap_vsmall_pic {
+    float: right; 
+    width: 20%;
+    margin-left: 30px;
+    text-align: center;
+}
+
+.wrap_small_pic {
+    float: right; 
+    width: 30%;
+    margin-left: 30px;
+    text-align: center;
+}
+
+.wrap_med_pic {
+    float: right; 
+    width: 45%;
+    margin-left: 30px;
+    text-align: center;
+}
+
+.wrap_big_pic {
+    float: right; 
+    width: 60%;
+    margin-left: 30px;
+    text-align: center;
+}
+
+.quarto-figure {
+    margin-bottom: 5px;
+}
+
+p {
+    text-align: justify;
+    text-justify: auto;
+}
