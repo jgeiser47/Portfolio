@@ -7,7 +7,7 @@ _The following is a summary of my formal education background._
 
 ## Stanford University
 
-::: {.wrap_med_pic}
+::: {.wrap_pic .w45}
 ![_They accidentally gave me a PhD cap!_](Stanford.JPG)
 :::
 
@@ -25,7 +25,7 @@ Outside of my own courses, I also was a teaching assistant at a variety of diffe
 
 ## Purdue University
 
-::: {.wrap_med_pic}
+::: {.wrap_pic .w45}
 ![_Commencement Day at Purdue_](Purdue.JPG)
 :::
 

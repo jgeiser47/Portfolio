@@ -7,7 +7,7 @@ _After finishing up graduate school, I hired on full-time in the Flight Mechanic
 
 ## Artemis I Operations
 
-::: {.wrap_small_pic}
+::: {.wrap_pic .w30}
 ![_Myself on console during Artemis I_](Artemis1.jpg)
 :::
 
@@ -17,7 +17,7 @@ I supported multiple shifts throughout the course of the 26 day mission (despite
 
 ## Artemis II Mission Design
 
-::: {.wrap_big_pic}
+::: {.wrap_pic .w60}
 ![_The nominal Artemis II trajectory_](https://www.nasa.gov/wp-content/uploads/2023/03/artemis_2_map_october_2021.jpg?w=1041)
 :::
 
@@ -27,7 +27,7 @@ My task was to develop abort trajectories across a range of conditions, includin
 
 ## Artemis III+ Mission Design
 
-::: {.wrap_big_pic}
+::: {.wrap_pic .w60}
 ![_The nominal Artemis III trajectory_](https://upload.wikimedia.org/wikipedia/commons/d/dd/Artemis_III_Mission_profile_2025.jpg)
 :::
 

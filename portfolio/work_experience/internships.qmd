@@ -11,7 +11,7 @@ This was my only internship during graduate school and my last one before beginn
 
 ## Summer 2020 - Blue Origin
 
-::: {.wrap_vsmall_pic}
+::: {.wrap_pic .w30}
 ![_This lander looks pretty neat!_](Blue_Origin.JPG)
 :::
 
@@ -27,7 +27,7 @@ This was my first internship in the flight mechanics and trajectory design branc
 
 ## Spring 2019 - NASA Johnson Space Center
 
-::: {.wrap_vsmall_pic}
+::: {.wrap_pic .w30}
 ![_The Neutral Buoyancy Lab at JSC_](NBL.JPG)
 :::
 
@@ -38,7 +38,7 @@ This tour really allowed me to develop the "soft" skills that are so important t
 
 ## Summer 2018 - NASA Jet Propulsion Laboratory
 
-::: {.wrap_vsmall_pic}
+::: {.wrap_pic .w30}
 ![_The Mars 2020 sky crane!_](JPL.JPG)
 :::
 
@@ -52,8 +52,8 @@ This was my first internship working at NASA's Johnson Space Center. Positioned 
 
 ## Summer 2017 - Raytheon Company
 
-::: {.wrap_vsmall_pic}
-![_Just a young engineer next to a tank_](Raytheon.JPG)
+::: {.wrap_pic .w30}
+![_A young engineer next to a tank_](Raytheon.JPG)
 :::
 
 For my first internship as an eager college sophomore, I would work in systems engineering at Raytheon Company (now part of Raytheon Technologies) in Indianapolis. I was a part of a team working on a modernized situational awareness avionics system for the HH-60G helicopter used by the U.S. Air National Guard. I performed a wide array of tasks in support of this effort, including requirements documentation using IBM's DOORS software, a functional hazard analysis for the helmet mounted display system, and testing of the display system. Additionally, I also picked up an extra software development task, and learned HTML/CSS/JavaScript from scratch to enhance the functionality of a Six Sigma project that tracks integration and testing of manufactured assemblies. 
