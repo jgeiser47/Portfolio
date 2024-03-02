@@ -41,6 +41,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -166,6 +169,14 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="optimal-angle-of-attack-control-for-aerocapture" class="level4">
 <h4 class="anchored" data-anchor-id="optimal-angle-of-attack-control-for-aerocapture"><em>Optimal Angle of Attack Control for Aerocapture</em></h4>
+<div class="wrap_pic w45">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../portfolio/publications/AoA_profile.gif" class="lightbox" data-glightbox="description: .lightbox-desc-1" data-gallery="quarto-lightbox-gallery-1" title="Numerically optimizing the Angle of Attack profile"><img src="../../portfolio/publications/AoA_profile.gif" class="img-fluid figure-img" alt="Numerically optimizing the Angle of Attack profile"></a></p>
+<figcaption><em>Numerically optimizing the Angle of Attack profile</em></figcaption>
+</figure>
+</div>
+</div>
 <p><a href="https://arc.aiaa.org/doi/abs/10.2514/6.2022-0608"><em>Publication</em></a></p>
 <p>Aerocapture is a maneuver in which a spacecraft redirects its trajectory by flying through a planet’s atmosphere to attain a desired orbit after atmospheric exit, typically at a fraction of the propellant cost of a fully propulsive maneuver. Direct Force Control (DFC) is a control methodology that varies the spacecraft’s angle of attack in order to target desired periapsis and apopasis altitudes of the post-atmospheric orbit. However, contrary to other control methodologies, there is no known optimal angle of attack profile for aerocapture trajectories using DFC. This paper uses principles of optimal control theory to numerically solve for the optimal angle of attack profile for an aerocpature mission at Mars. This work was published at the 2022 AIAA SciTech Forum in San Diego, California.</p>
 </section>
@@ -183,6 +194,9 @@ ul.task-list li input[type="checkbox"] {
 <p>The Psyche mission is a mission to explore a metal-rich asteroid in orbit between Mars and Jupiter. As a NASA Discovery mission, Psyche has the advantage of a number of predecessors to take lessons learned from, including in the area of Verification and Validation (V&amp;V) planning and development. This paper highlights some of the strategies used by the Psyche team to take advantage of V&amp;V planning early in the project lifecycle, including the use of DOORS Next Generation (DNG) software and some of the tools developed to augment its capabilities. This work was published at the 2019 IEEE Aerospace Conference in Big Sky, Montana.</p>
 
 
+<div class="hidden" aria-hidden="true">
+<span class="glightbox-desc lightbox-desc-1"><em>Numerically optimizing the Angle of Attack profile</em></span>
+</div>
 </section>
 </section>
 
@@ -719,6 +733,31 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","openEffect":"zoom","descPosition":"bottom","selector":".lightbox","loop":false});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
+        }
+      }
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
+          </script>
 
 
 
