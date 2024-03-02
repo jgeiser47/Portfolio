@@ -6,7 +6,7 @@ project:
 
 website:
   title: "Joshua Geiser"
-  site-url: "https://jgeiser47.github.io/Portfolio"
+  site-url: "joshua-geiser.com"
   navbar:
     left:
       - href: index.qmd

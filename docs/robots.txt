@@ -1,1 +1,1 @@
-Sitemap: https://jgeiser47.github.io/Portfolio/sitemap.xml
+Sitemap: joshua-geiser.com/sitemap.xml
