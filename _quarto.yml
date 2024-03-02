@@ -2,7 +2,7 @@ project:
   type: website
   output-dir: docs
   resources: 
-    - ./Geiser_Resume.pdf 
+    - /portfolio/resume.pdf 
 
 website:
   title: "Joshua Geiser"
