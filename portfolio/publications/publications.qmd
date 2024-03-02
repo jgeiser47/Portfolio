@@ -21,7 +21,7 @@ Copernicus is a generalized spacecraft trajectory design and optimization softwa
 
 [_Publication_](https://arc.aiaa.org/doi/abs/10.2514/6.2022-0608)
 
-Aerocapture is a maneuver in which a spacecraft redirects its trajectory by flying through a planet's atmosphere to attain a desired orbit after atmospheric exit, typically at a fraction of the propellant cost of a fully propulsive maneuver. Direct Force Control (DFC) is a control methodology that varies the spacecraft's angle of attack in order to target desired periapsis and apopasis altitudes of the post-atmospheric orbit. However, contrary to other control methodologies, there is no known optimal angle of attack profile for aerocapture trajectories using DFC. This paper uses principles of optimal control theory to numerically solve for the optimal angle of attack profile for an aerocpature mission at Mars. This work was published at the 2022 AIAA SciTech Forum in San Diego, California. 
+Aerocapture is a maneuver in which a spacecraft redirects its trajectory by flying through a planet's atmosphere to attain a desired orbit after atmospheric exit, typically at a fraction of the propellant cost of a fully propulsive maneuver. Direct Force Control (DFC) is a control methodology that varies the spacecraft's angle of attack in order to target desired periapsis and apopasis altitudes of the post-atmospheric orbit. However, contrary to other control methodologies, there is no known optimal angle of attack profile for aerocapture trajectories using DFC. This paper uses principles of optimal control theory to numerically solve for the optimal angle of attack profile for an aerocapture mission at Mars. This work was published at the 2022 AIAA SciTech Forum in San Diego, California. 
 
 ## Co-Author
 
