@@ -11,12 +11,9 @@ _The following is a summary of my formal education background._
 ![_They accidentally gave me a PhD cap!_](Stanford.JPG)
 :::
 
-**Dates:** Sep 2020 - Mar 2022
-
-**Degree:** Master's of Science
-
-**Field:** Aeronautics & Astronautics
-
+**Dates:** Sep 2020 - Mar 2022 \
+**Degree:** Master's of Science \
+**Field:** Aeronautics & Astronautics \
 **GPA:** 4.00 / 4.00
 
 I felt incredibly lucky to have the opportunity to attend Stanford University for my graduate degree. Within the realm of aerospace, I continued to further explore my specializations in astrodynamics and Guidance, Navigation, and Control (GN&C). I performed graduate research under Professor Simone D'Amico, working on simulation development and analysis for a high-precision spacecraft formation flying mission known as VISORS. Though my degree was in the aero/astro department, I was also curious about many topics in computer science and autonomy, and took courses such as _Machine Learning_, _Decision Making Under Uncertainty_, _Principles of Robot Autonomy_, and _Programming Abstractions_. 
@@ -29,12 +26,9 @@ Outside of my own courses, I also was a teaching assistant at a variety of diffe
 ![_Commencement Day at Purdue_](Purdue.JPG)
 :::
 
-**Dates:** Aug 2015 - Dec 2019
-
-**Degree:** Bachelor's of Science
-
-**Field:** Aeronautical & Astronautical Engineering
-
+**Dates:** Aug 2015 - Dec 2019 \
+**Degree:** Bachelor's of Science \
+**Field:** Aeronautical & Astronautical Engineering \
 **GPA:** 4.00 / 4.00
 
 For my undergraduate education, I attended Purdue University in West Lafayette, Indiana, about an hour away from my hometown. While here, I began to learn of my passion for aerospace and human spaceflight, and learned of Purdue's rich history in these fields. Towards the end of my degree, I began to specialize in the fields of dynamics and controls, with an emphasis on astrodynamics, and I realized that I wanted to attend graduate school to deepen my knowledge in these fields. I also got involved in undergraduate research with Professor Dengfeng Sun, developing a small Python simulation framework for simulating the dynamics and controls of aircraft in flight. 
