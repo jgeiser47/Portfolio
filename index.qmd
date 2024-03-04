@@ -10,25 +10,16 @@ about:
     - icon: github
       text: GitHub
       href: https://github.com/jgeiser47
-    - icon: paperclip
+    - icon: file-person-fill
       text: Resume
       href: /portfolio/resume.pdf
 ---
 
-## Background
+## About Me
 
-Hi! My name is Josh, thanks for visiting my personal portfolio website! I am an Aerospace Engineer in the Flight Mechanics and Trajectory Design Branch at NASA's Johnson Space Center. When not optimizing trajectories for future missions to the Moon, I enjoy getting outdoors, climbing mountains, and training Brazilian Jiu-Jitsu.
+Hi there, thanks for visiting my personal portfolio website! I am an aerospace engineer by trade, currently working in the Flight Mechanics and Trajectory Design Branch at NASA's Johnson Space Center (JSC). Before hiring on full-time, I completed eight internships between NASA JSC, NASA JPL, Blue Origin, and Raytheon. 
 
-## Education
+Although I come from an aerospace background, I am also passionate about software development. Through school, internships, and full-time work, I've been able to strengthen my programming skills and transition myself towards more software-oriented roles.
 
-Stanford University | M.S. in Aeronautics & Astronautics | Sep 2020 - Mar 2022
-
-Purdue University | B.S. in Aeronautical & Astronautical Engineering | Aug 2015 - Dec 2019
-
-## Experience
-
-NASA Johnson Space Center | Aerospace Engineer - Full Time | Jul 2022 - present
-
-## Resume
-
-[Here](/portfolio/resume.pdf) is my current resume!
+When not writing code to optimize trajectories for future Moon missions, I enjoy getting outdoors, climbing mountains, and training Brazilian Jiu-Jitsu.
+A unique fact about me is I have worked seasonally as a mountaineering guide on Mount Rainier!

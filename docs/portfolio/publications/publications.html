@@ -118,6 +118,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="quarto-navbar-tools tools-wide">
     <a href="https://www.linkedin.com/in/joshua-geiser" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-linkedin"></i></a>
     <a href="https://github.com/jgeiser47" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
+    <a href="../../portfolio/resume.pdf" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-file-person-fill"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
@@ -165,20 +166,20 @@ ul.task-list li input[type="checkbox"] {
 <section id="copernicuslincov-copcov-software-integration-in-support-of-robust-trajectory-optimization" class="level4">
 <h4 class="anchored" data-anchor-id="copernicuslincov-copcov-software-integration-in-support-of-robust-trajectory-optimization"><em>Copernicus/LinCov (CopCov) Software Integration in Support of Robust Trajectory Optimization</em></h4>
 <p><a href="https://ntrs.nasa.gov/citations/20230010563"><em>Publication</em></a></p>
-<p>Copernicus is a generalized spacecraft trajectory design and optimization software, commonly used to design reference trajectory profiles. LinCov is a completely separate tool, used to produce linear covariance analyses that determine how well an integrated GN&amp;C system is able to fly the reference profile. While these two tools have historically been run independently, together they can achieve the notion of robust trajectory optimization, whereby a trajectory is optimized while accounting for system uncertanties. This paper highlights the implementation of the CopCov interface, which allows Copernicus and LinCov to jointly optimize trajectories through a direct feedback loop. This work was published and presented at the 2023 AAS/AIAA Astrodynamics Specialist Conference in Big Sky, Montana.</p>
+<p>Copernicus is a generalized spacecraft trajectory design and optimization software, commonly used to design reference trajectory profiles. LinCov is a completely separate tool, used to produce linear covariance analyses that determine how well an integrated GN&amp;C system is able to fly the reference profile. While these two tools have historically been run independently, together they can achieve the notion of robust trajectory optimization, whereby a trajectory is optimized while accounting for system uncertainties. This paper highlights the implementation of the CopCov interface, which allows Copernicus and LinCov to jointly optimize trajectories through a direct feedback loop. This work was published and presented at the 2023 AAS/AIAA Astrodynamics Specialist Conference in Big Sky, Montana.</p>
 </section>
 <section id="optimal-angle-of-attack-control-for-aerocapture" class="level4">
 <h4 class="anchored" data-anchor-id="optimal-angle-of-attack-control-for-aerocapture"><em>Optimal Angle of Attack Control for Aerocapture</em></h4>
 <div class="wrap_pic w45">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="../../portfolio/publications/AoA_profile.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-glightbox="description: .lightbox-desc-1" title="Numerically optimizing the Angle of Attack profile"><img src="../../portfolio/publications/AoA_profile.gif" class="img-fluid figure-img" alt="Numerically optimizing the Angle of Attack profile"></a></p>
+<p><a href="../../portfolio/publications/AoA_profile.gif" class="lightbox" data-glightbox="description: .lightbox-desc-1" data-gallery="quarto-lightbox-gallery-1" title="Numerically optimizing the Angle of Attack profile"><img src="../../portfolio/publications/AoA_profile.gif" class="img-fluid figure-img" alt="Numerically optimizing the Angle of Attack profile"></a></p>
 <figcaption><em>Numerically optimizing the Angle of Attack profile</em></figcaption>
 </figure>
 </div>
 </div>
 <p><a href="https://arc.aiaa.org/doi/abs/10.2514/6.2022-0608"><em>Publication</em></a></p>
-<p>Aerocapture is a maneuver in which a spacecraft redirects its trajectory by flying through a planet’s atmosphere to attain a desired orbit after atmospheric exit, typically at a fraction of the propellant cost of a fully propulsive maneuver. Direct Force Control (DFC) is a control methodology that varies the spacecraft’s angle of attack in order to target desired periapsis and apopasis altitudes of the post-atmospheric orbit. However, contrary to other control methodologies, there is no known optimal angle of attack profile for aerocapture trajectories using DFC. This paper uses principles of optimal control theory to numerically solve for the optimal angle of attack profile for an aerocapture mission at Mars. This work was published at the 2022 AIAA SciTech Forum in San Diego, California.</p>
+<p>Aerocapture is a maneuver in which a spacecraft redirects its trajectory by flying through a planet’s atmosphere to attain a desired orbit after atmospheric exit, typically at a fraction of the propellant cost of a fully propulsive maneuver. Direct Force Control (DFC) is a control methodology that varies the spacecraft’s angle of attack in order to target desired periapsis and apoapsis altitudes of the post-atmospheric orbit. However, contrary to other control methodologies, there is no known optimal angle of attack profile for aerocapture trajectories using DFC. This paper uses principles of optimal control theory to numerically solve for the optimal angle of attack profile for an aerocapture mission at Mars. This work was published at the 2022 AIAA SciTech Forum in San Diego, California.</p>
 </section>
 </section>
 <section id="co-author" class="level2">
@@ -733,7 +734,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","loop":false,"descPosition":"bottom","closeEffect":"zoom","openEffect":"zoom"});
+<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","loop":false,"selector":".lightbox","descPosition":"bottom","closeEffect":"zoom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

@@ -24,6 +24,8 @@ website:
         href: https://www.linkedin.com/in/joshua-geiser
       - icon: github
         href: https://github.com/jgeiser47
+      - icon: file-person-fill
+        href: /portfolio/resume.pdf
 
   sidebar:
     - id: about
